@@ -1,3 +1,44 @@
+@font-face {
+    font-family: 'ARCADE';
+    src: url("fonts/ARCADE.TTF");
+}
+
+@font-face {
+    font-family: 'Simpsons';
+    src: url("fonts/Simpsonfont.otf");
+}
+
+@font-face {
+    font-family: 'RingM';
+    src: url("fonts/RINGM___.TTF");
+}
+
+body {
+  background-color: #808080;
+}
+
+
+#arcade-test {
+  font-family: "arcade";
+  font-size: 70px;
+  color: #B8B8B8;
+}
+
+#movie-test {
+  font-family: "RingM";
+  color: #B8B8B8;
+}
+
+#show-test {
+  font-family: "Simpsons";
+  color: #B8B8B8;
+}
+
+
+.nav-bar {
+  margin-top: 20px;
+}
+
 .nav-bar ul {
   list-style: none;
   margin: 0;
@@ -6,14 +47,23 @@
   background-color: #dddddd;
   margin-bottom: 50px;
   border-radius: 10px;
+  padding-left: 20px;
 }
 
 .nav-bar li {
   float: left;
 }
 
-ul {
+.nav-bar li {
+  float: left;
+}
+
+.menu_ul ul {
   list-style: none;
+}
+
+.active {
+  font-weight: bold;
 }
 
 .nav-bar li a {
@@ -25,14 +75,32 @@ ul {
 
 .nav-bar li a:hover {
   color: blue;
+  background-color: ;
 }
 
-.jumbotron a  {
+/*.jumbotron a  {
  color: white;
-}
+ color: #d3d3d3;
+}*/
 
 .jumbotron {
   background-color: black;
+  background: rgba(238, 238, 238, 0.5);
+}
+
+.jumbotron h1 {
+  color: #E6DEDC;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.pages {
+  background-color: pink;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fa-arrow-circle-left, .fa-arrow-circle-right {
@@ -44,6 +112,8 @@ ul {
 .carousel-control-next, .carousel-control-prev {
   opacity: 1;
 }
+
+/*Slideshow Code*/
 
 .slideshow-test,
 .slideshow-test:after {
@@ -59,6 +129,10 @@ ul {
     background: transparent url(../pattern.png) repeat top left;
 }
 
+.slideshow-test li {
+  list-style: none;
+}
+
 .slideshow-test li span {
     width: 100%;
     height: 100%;
@@ -71,7 +145,7 @@ ul {
     background-repeat: none;
     opacity: 0;
     z-index: 0;
-    animation: imageAnimation 18s linear infinite 0s;
+    animation: imageAnimation 17.25s linear infinite 0s;
 }
 
 .slideshow-test li div {
@@ -83,27 +157,22 @@ ul {
     text-align: center;
     opacity: 0;
     color: #fff;
-    animation: titleAnimation 18s linear infinite 0s;
+    animation: titleAnimation 17.25s linear infinite 0s;
 }
 
 .slideshow-test li:nth-child(1) span {
-    background-image: url(../1.png)
+  background-image: url(../movie.jpg);
 }
 .slideshow-test li:nth-child(2) span {
-    background-image: url(../2.png);
-    animation-delay: 6s;
+    background-image: url(../tv_background.jpg);
+    animation-delay: 5.75s;
 }
 .slideshow-test li:nth-child(3) span {
-    background-image: url(../3.png);
-    animation-delay: 12s;
+    background-image: url(../console.jpg);
+    animation-delay: 11.5s;
 }
 
-/*.slideshow-test li:nth-child(2) div {
-    animation-delay: 6s;
-}
-.slideshow-test li:nth-child(3) div {
-    animation-delay: 12s;
-}*/
+
 
 
 @keyframes imageAnimation {
