@@ -24,14 +24,26 @@ body {
   color: #B8B8B8;
 }
 
+.ARCADE {
+  font-family: "arcade";
+}
+
 #movie-test {
   font-family: "RingM";
   color: #B8B8B8;
 }
 
+.RingM {
+  font-family: "RingM";
+}
+
 #show-test {
   font-family: "Simpsons";
   color: #B8B8B8;
+}
+
+.Simpsons {
+  font-family: "Simpsons";
 }
 
 
@@ -97,7 +109,7 @@ a:hover {
 }
 
 .pages {
-  background-color: pink;
+  background-color: #FDFDFD;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
